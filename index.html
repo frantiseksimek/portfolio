@@ -1,0 +1,247 @@
+<!doctype html>
+<html lang="cs">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>František Šimek — Portfolio</title>
+<meta name="description" content="František Šimek — 3D, video, instalace, kresby.">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Geist:wght@400;500&display=swap">
+<link rel="stylesheet" href="style.css">
+<script type="importmap">
+{ "imports": {
+  "three": "https://cdn.jsdelivr.net/npm/three@0.160.0/build/three.module.js",
+  "three/addons/": "https://cdn.jsdelivr.net/npm/three@0.160.0/examples/jsm/"
+} }
+</script>
+</head>
+<body>
+
+<header class="intro" id="top" data-theme="white">
+  <h1 class="fit"><span>František</span><span>Šimek</span><span class="small">Portfolio</span></h1>
+</header>
+
+<nav class="nav" aria-label="Sekce">
+  <a href="#3d">3D</a>
+  <a href="#tisk">3D tisk</a>
+  <a href="#video">Video</a>
+  <a href="#game">Game</a>
+  <a href="#instalace">Instalace</a>
+  <a href="#kresby">Kresby</a>
+</nav>
+
+<main>
+
+  <!-- ================= 3D ================= -->
+  <section class="section" id="3d" data-theme="white">
+    <div class="section-head"><h2>3D</h2><p>01</p></div>
+
+    <article class="project">
+      <div class="meta" style="--c:1/span 3;--r:1">
+        <h3>Achromatic town syndrome</h3>
+        <dl><dt>Rok</dt><dd>2026</dd><dt>Délka</dt><dd>9:54 min</dd><dt>Médium</dt><dd>3D animace / video</dd></dl>
+      </div>
+      <figure style="--c:4/span 9;--r:1"><img src="assets/img/p2_1.jpg" width="1781" height="1002" alt="Achromatic town syndrome, still" loading="lazy"></figure>
+      <figure style="--c:1/span 5;--r:2;--m:5vw"><img src="assets/img/p2_4.jpg" width="1216" height="937" alt="Achromatic town syndrome, pohled do instalace" loading="lazy"><figcaption>pohled do instalace</figcaption></figure>
+      <figure style="--c:6/span 7;--r:2"><img src="assets/img/p2_3.jpg" width="1755" height="1036" alt="Achromatic town syndrome, still" loading="lazy"></figure>
+      <figure style="--c:3/span 7;--r:3"><img src="assets/img/p2_2.jpg" width="1759" height="984" alt="Achromatic town syndrome, still" loading="lazy"></figure>
+    </article>
+
+    <article class="project">
+      <div class="meta" style="--c:1/span 3;--r:1">
+        <h3>famufest2026</h3>
+        <dl><dt>Rok</dt><dd>2026</dd><dt>Médium</dt><dd>3D</dd></dl>
+      </div>
+      <figure style="--c:5/span 8;--r:1"><img src="assets/img/p3_1.jpg" width="1758" height="1142" alt="famufest2026, render" loading="lazy"></figure>
+    </article>
+
+    <article class="project">
+      <div class="meta" style="--c:1/span 3;--r:1">
+        <h3>Verify that you are robot</h3>
+        <dl><dt>Rok</dt><dd>2025</dd><dt>Délka</dt><dd>7:44 min</dd><dt>Médium</dt><dd>3D / video / instalace</dd></dl>
+      </div>
+      <figure style="--c:4/span 6;--r:1"><img src="assets/img/p4_1.jpg" width="1256" height="755" alt="Verify that you are robot, still" loading="lazy"></figure>
+      <figure style="--c:10/span 3;--r:1;--m:9vw"><img src="assets/img/p4_2.jpg" width="1261" height="763" alt="Verify that you are robot, still" loading="lazy"></figure>
+      <figure style="--c:1/span 4;--r:2"><img src="assets/img/p4_4.jpg" width="1036" height="1375" alt="Verify that you are robot, instalace" loading="lazy"></figure>
+      <figure style="--c:5/span 4;--r:2;--m:6vw"><img src="assets/img/p4_5.jpg" width="1078" height="1367" alt="Verify that you are robot, instalace" loading="lazy"></figure>
+      <figure style="--c:9/span 4;--r:2;--m:2vw"><img src="assets/img/p4_3.jpg" width="1261" height="760" alt="Verify that you are robot, still" loading="lazy"></figure>
+    </article>
+  </section>
+
+  <!-- ================= 3D TISK ================= -->
+  <section class="section print" id="tisk" data-theme="white">
+    <div class="section-head"><h2>3D tisk</h2><p>02</p></div>
+
+    <article class="project">
+      <div class="meta" style="--c:1/span 3;--r:1">
+        <h3>pocasi</h3>
+        <dl><dt>Médium</dt><dd>3D model</dd></dl>
+        <p class="hint">Táhni pro otáčení.<br>Po kliknutí kolečko / dva prsty přiblíží.<br>Dvojklik vrátí pohled.</p>
+      </div>
+      <div class="viewer" style="--c:4/span 9;--r:1" data-model="assets/models/pocasi.glb">
+        <div class="v-stage"></div>
+        <span class="v-status">Načítám model…</span>
+        <div class="v-ctrl">
+          <button data-zoom-in aria-label="Přiblížit">+</button>
+          <button data-zoom-out aria-label="Oddálit">−</button>
+          <button data-reset>Reset</button>
+        </div>
+      </div>
+    </article>
+
+    <article class="project">
+      <div class="viewer" style="--c:1/span 8;--r:1" data-model="assets/models/411final.glb">
+        <div class="v-stage"></div>
+        <span class="v-status">Načítám model…</span>
+        <div class="v-ctrl">
+          <button data-zoom-in aria-label="Přiblížit">+</button>
+          <button data-zoom-out aria-label="Oddálit">−</button>
+          <button data-reset>Reset</button>
+        </div>
+      </div>
+      <div class="meta" style="--c:10/span 3;--r:1">
+        <h3>411final</h3>
+        <dl><dt>Médium</dt><dd>3D model / 3D tisk</dd><dt>Materiál</dt><dd>PLA</dd><dt>Rozměr</dt><dd>219 × 151 × 20 mm</dd></dl>
+        <p class="hint">Táhni pro otáčení.<br>Po kliknutí kolečko / dva prsty přiblíží.<br>Dvojklik vrátí pohled.</p>
+      </div>
+    </article>
+  </section>
+
+  <!-- ================= VIDEO ================= -->
+  <section class="section" id="video" data-theme="black">
+    <div class="section-head"><h2>Video</h2><p>03</p></div>
+
+    <article class="project">
+      <div class="meta" style="--c:1/span 3;--r:1">
+        <h3>nuke the memory</h3>
+        <dl><dt>Rok</dt><dd>2023</dd><dt>Délka</dt><dd>5:32 min</dd><dt>Médium</dt><dd>video</dd></dl>
+      </div>
+      <figure style="--c:4/span 8;--r:1"><img src="assets/img/p5_4.jpg" width="1651" height="1011" alt="nuke the memory, still" loading="lazy"></figure>
+      <figure style="--c:1/span 6;--r:2"><img src="assets/img/p5_3.jpg" width="1619" height="1011" alt="nuke the memory, still" loading="lazy"></figure>
+      <figure style="--c:7/span 6;--r:2;--m:6vw"><img src="assets/img/p5_1.jpg" width="1650" height="972" alt="nuke the memory, still" loading="lazy"></figure>
+      <figure style="--c:3/span 7;--r:3"><img src="assets/img/p5_2.jpg" width="1606" height="976" alt="nuke the memory, still" loading="lazy"></figure>
+    </article>
+
+    <article class="project">
+      <div class="meta" style="--c:1/span 3;--r:1">
+        <h3>atrikrist: Chromeshards</h3>
+        <dl><dt>Rok</dt><dd>2023</dd><dt>Médium</dt><dd>videoklip</dd></dl>
+      </div>
+      <figure style="--c:4/span 7;--r:1"><img src="assets/img/p6_1.jpg" width="1116" height="608" alt="atrikrist: Chromeshards, still" loading="lazy"></figure>
+      <figure style="--c:2/span 5;--r:2"><img src="assets/img/p6_2.jpg" width="1161" height="672" alt="atrikrist: Chromeshards, still" loading="lazy"></figure>
+      <figure style="--c:7/span 6;--r:2;--m:5vw"><img src="assets/img/p6_3.jpg" width="1161" height="712" alt="atrikrist: Chromeshards, still" loading="lazy"></figure>
+    </article>
+
+    <article class="project">
+      <div class="meta" style="--c:1/span 3;--r:1">
+        <h3>atrikrist: Kvuli tobe zase maluju</h3>
+        <dl><dt>Rok</dt><dd>2024</dd><dt>Médium</dt><dd>videoklip</dd></dl>
+      </div>
+      <figure style="--c:5/span 5;--r:1"><img src="assets/img/p6_4.jpg" width="766" height="594" alt="atrikrist: Kvuli tobe zase maluju, still" loading="lazy"></figure>
+      <figure style="--c:1/span 6;--r:2;--m:3vw"><img src="assets/img/p6_5.jpg" width="945" height="672" alt="atrikrist: Kvuli tobe zase maluju, still" loading="lazy"></figure>
+      <figure style="--c:7/span 5;--r:2"><img src="assets/img/p6_6.jpg" width="845" height="634" alt="atrikrist: Kvuli tobe zase maluju, still" loading="lazy"></figure>
+    </article>
+
+    <article class="project">
+      <div class="meta" style="--c:1/span 3;--r:1">
+        <h3>gav: agenda</h3>
+        <dl><dt>Rok</dt><dd>2023</dd><dt>Médium</dt><dd>videoklip</dd></dl>
+      </div>
+      <figure style="--c:4/span 9;--r:1"><img src="assets/img/p6_8.jpg" width="1190" height="672" alt="gav: agenda, still" loading="lazy"></figure>
+      <figure style="--c:2/span 5;--r:2;--m:4vw"><img src="assets/img/p6_7.jpg" width="923" height="622" alt="gav: agenda, still" loading="lazy"></figure>
+      <figure style="--c:7/span 6;--r:2"><img src="assets/img/p6_9.jpg" width="1228" height="691" alt="gav: agenda, still" loading="lazy"></figure>
+    </article>
+  </section>
+
+  <!-- ================= GAME ================= -->
+  <section class="section" id="game" data-theme="white">
+    <div class="section-head"><h2>Game</h2><p>04</p></div>
+
+    <article class="project">
+      <div class="meta" style="--c:1/span 3;--r:1">
+        <h3>Shoplifting simulator</h3>
+        <p class="sub">Unity game prototype</p>
+        <dl><dt>Médium</dt><dd>počítačová hra (Unity)</dd><dt>Záznam</dt><dd>1:08 min</dd></dl>
+      </div>
+      <div class="video" style="--c:4/span 9;--r:1">
+        <video controls playsinline preload="metadata" poster="assets/game/poster.jpg" width="1280" height="800">
+          <source src="assets/game/shoplifting.mp4" type="video/mp4">
+        </video>
+        <p class="cap">Celý záznam hraní</p>
+      </div>
+      <figure style="--c:1/span 4;--r:2;--m:2vw"><img src="assets/game/g1.jpg" width="1600" height="1000" alt="Shoplifting simulator, pravidla hry" loading="lazy"></figure>
+      <figure style="--c:5/span 5;--r:2"><img src="assets/game/g2.jpg" width="1600" height="1000" alt="Shoplifting simulator, krádež v uličce" loading="lazy"></figure>
+      <figure style="--c:10/span 3;--r:2;--m:6vw"><img src="assets/game/g3.jpg" width="1600" height="1000" alt="Shoplifting simulator, vchod do obchodu" loading="lazy"></figure>
+      <figure style="--c:2/span 5;--r:3"><img src="assets/game/g4.jpg" width="1600" height="1000" alt="Shoplifting simulator, regál s alkoholem" loading="lazy"></figure>
+      <figure style="--c:7/span 3;--r:3;--m:5vw"><img src="assets/game/g5.jpg" width="1600" height="1000" alt="Shoplifting simulator, game over" loading="lazy"></figure>
+      <figure style="--c:10/span 3;--r:3;--m:1vw"><img src="assets/game/g6.jpg" width="1600" height="1000" alt="Shoplifting simulator, you won" loading="lazy"></figure>
+    </article>
+  </section>
+
+  <!-- ================= INSTALACE ================= -->
+  <section class="section" id="instalace" data-theme="black">
+    <div class="section-head"><h2>Instalace</h2><p>05</p></div>
+
+    <article class="project">
+      <div class="meta" style="--c:1/span 3;--r:1">
+        <h3>you have a new memory</h3>
+        <dl><dt>Rok</dt><dd>2025 / 2026</dd><dt>Místo</dt><dd>GAMU; Vašulka kitchen Brno</dd></dl>
+      </div>
+      <figure style="--c:4/span 6;--r:1"><img src="assets/img/p7_1.jpg" width="1314" height="986" alt="you have a new memory, instalace" loading="lazy"></figure>
+      <figure style="--c:10/span 3;--r:1/span 2;--m:6vw"><img src="assets/img/p7_4.jpg" width="874" height="1547" alt="you have a new memory, obrazovka" loading="lazy"></figure>
+      <figure style="--c:1/span 3;--r:2;--m:4vw"><img src="assets/img/p7_3.jpg" width="939" height="1251" alt="you have a new memory, detail" loading="lazy"></figure>
+      <figure style="--c:4/span 6;--r:2"><img src="assets/img/p7_2.jpg" width="1312" height="930" alt="you have a new memory, detail" loading="lazy"></figure>
+    </article>
+
+    <article class="project">
+      <div class="meta" style="--c:1/span 3;--r:1">
+        <h3>Half earth paradise</h3>
+        <dl><dt>Rok</dt><dd>2026</dd><dt>Místo</dt><dd>GAMU</dd></dl>
+      </div>
+      <figure style="--c:4/span 5;--r:1"><img src="assets/img/p8_1.jpg" width="1273" height="1517" alt="Half earth paradise, instalace" loading="lazy"></figure>
+      <figure style="--c:9/span 4;--r:1;--m:7vw"><img src="assets/img/p8_2.jpg" width="1041" height="1359" alt="Half earth paradise, detail" loading="lazy"></figure>
+      <figure style="--c:1/span 4;--r:2;--m:3vw"><img src="assets/img/p8_3.jpg" width="910" height="1183" alt="Half earth paradise, instalace" loading="lazy"></figure>
+      <figure style="--c:5/span 8;--r:2"><img src="assets/img/p8_4.jpg" width="1230" height="920" alt="Half earth paradise, instalace" loading="lazy"></figure>
+    </article>
+  </section>
+
+  <!-- ================= KRESBY ================= -->
+  <section class="section" id="kresby" data-theme="white">
+    <div class="section-head"><h2>Kresby</h2><p>06</p></div>
+
+    <div class="slides" id="slides" aria-roledescription="slideshow" aria-label="Kresby">
+      <div class="frame"></div>
+      <button class="hit prev" aria-label="Předchozí kresba"></button>
+      <button class="hit next" aria-label="Další kresba"></button>
+      <div class="bar">
+        <span class="count">01 / 19</span>
+        <span class="ctrl">
+          <button data-go="-1">Předchozí</button>
+          <button data-go="1">Další</button>
+          <button data-play>Pauza</button>
+        </span>
+      </div>
+    </div>
+    <div class="thumbs" id="thumbs"></div>
+  </section>
+
+</main>
+
+<footer>
+  <span class="l">© František Šimek</span>
+  <a class="r" href="#top">Nahoru ↑</a>
+</footer>
+
+<div class="lb" id="lb" role="dialog" aria-modal="true" aria-label="Detail obrázku">
+  <img alt="">
+  <div class="cap"><span class="t"></span><span class="n"></span></div>
+  <button class="side prev" aria-label="Předchozí"></button>
+  <button class="side next" aria-label="Další"></button>
+  <button class="close">Zavřít</button>
+</div>
+
+<script src="script.js"></script>
+<script type="module" src="viewer.js"></script>
+</body>
+</html>
